@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+<style type="text/css">
+@keyframes mainborder{
+	0% {
+		background-image: url("https://movie-phinf.pstatic.net/20210512_139/1620799657168vGIqq_JPEG/movie_image.jpg"); }
+	20% {
+		background-image: url("https://movie-phinf.pstatic.net/20210518_265/1621316858792fXwRb_JPEG/movie_image.jpg"); }
+	40% {
+		background-image: url("https://movie-phinf.pstatic.net/20210421_37/1618971733493B4ykS_JPEG/movie_image.jpg");
+	}
+	80% {
+		background-image: url("https://movie-phinf.pstatic.net/20210526_164/1622018439127m1L49_JPEG/movie_image.jpg");
+	}
+	100% {
+		background-image: url("https://movie-phinf.pstatic.net/20210126_174/1611638248803840HH_JPEG/movie_image.jpg");
+	}
+}
+header {
+	background-color: white;
+	width: 1500px;
+	height: 150px;
+	border: solid 0px black;
+}
+#logo{
+	width: 200px;
+	height: 95px;
+	float: left;
+}
+#search{
+	width: 190px;
+	heigh : 95px;
+	float: right;
+	padding-top: 23px;
+	margin-right: 5px;
+}
+aside {
+	background: linear-gradient(to right,#F8BFF4,#BFD7F8);
+	height: 50px;
+	padding-top: 10px;
+	padding-left: 35px;
+	border: solid 0px black;
+}
+aside li {
+	display: inline;
+
+}
+section {
+	border: solid 0px black;
+}
+#aside_01{
+	animation-name: mainborder;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	width: 1465px;
+	height: 500px;
+	border: solid 0px black;
+
+}
+footer{
+	width: 1500px;
+	height: 30px;
+	margin-top: 10px;
+	border: solid 0px black;
+}
+</style>
+</head>
+<body>
+
+<header>
+	<div id="logo">
+		<img src="./img/logo.jpg" width="200px"></a>
+	</div>
+	<div id="search">
+		<a href="nav01.html" target="aa">HOME</a> |
+		LOGIN | 회원가입
+	</div>
+	<div id="search">
+		<input type="search" placeholder=" movie search">
+	</div>
+</header>
+
+
+<aside>
+	<nav>
+		<ul>
+			<li><a href="nav01.html" target="aa">무비차트</a></li>
+			<li><a href="section.html" target="aa">로맨스</a></li>
+			<li><a href="nav02.html" target="aa">액션</a></li>
+		</ul>
+	</nav>
+</aside>
+
+<section>
+<iframe src="section.html" scrolling="no" name="aa" width="1500px" height="500px" frameborder="0"></iframe>
+</section>
+
+<aside id="aside_01">
+	
+</aside>
+
+<footer>
+	이용약관 | 개인정보 처리 방침 | 법적고지
+</footer>
+
+</body>
+</html>
