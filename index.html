@@ -45,8 +45,62 @@ aside {
 	border: solid 0px black;
 }
 aside li {
-	display: inline;
+	display: inline-block;
+	float: left;
 
+}
+aside li a {
+	display: inline-block;
+	padding: 0px 15px;
+}
+aside li a {
+	text-decoration: none;
+	color: black;
+}
+.img01 a {
+	color: white;
+}
+.img01 {
+	display:inline-block;
+	height: 50px;
+}
+.overlay01 {
+    position: absolute;
+    top: 218px;
+    left: 9px;
+    width: 1502px;
+    height: 550px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.overlay01 > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.overlay01:hover {
+    opacity: 1;
+}
+
+.overlay01:hover > * {
+    transform: translateY(0);
+}
+
+.image_title01 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image_desc01 {
+    font-size: 1.25em;
+    margin-top: 0.25em;
 }
 section {
 	border: solid 0px black;
@@ -87,7 +141,7 @@ footer{
 <aside>
 	<nav>
 		<ul>
-			<li><a href="nav01.html" target="aa">무비차트</a></li>
+			<li><a href="nav01.html" target="aa">무비차트</a>
 			<li><a href="section.html" target="aa">로맨스</a></li>
 			<li><a href="nav02.html" target="aa">액션</a></li>
 		</ul>
@@ -96,6 +150,12 @@ footer{
 
 <section>
 <iframe src="section.html" scrolling="no" name="aa" width="1500px" height="500px" frameborder="0"></iframe>
+<div class="img01">
+		<div class="overlay01">
+			<div class="img_title01"> 무비차트 </div>
+			<p class="img_desc01"><a href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&qvt=0&query=%EB%B0%95%EC%8A%A4%EC%98%A4%ED%94%BC%EC%8A%A4">실시간 박스오피스</a></p>
+		</div>
+</div>
 </section>
 
 <aside id="aside_01">
