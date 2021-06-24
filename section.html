@@ -4,61 +4,87 @@
 	<meta charset="utf-8">
 	<title></title>
 <style type="text/css">
-nav li {
+ul li {
 	float: left;
 	margin: 30px;
+	list-style: none;
+}
+.overlay01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.25s;
+}
+.sec:hover .overlay {
+	display: block;
 }
 </style>
 </head>
 <body>
-<nav>
-		<ol>
+	<div class="sec">
+		<ul>
 			<li>
 				<div id="main01">
 					<img src="./img/main01.jpg" width="200px">
 				</div>
 				<div id="ta01"><h3>노트북</h3></div><br>
-				<div id="button01">
-					<button type="button"> click </button>
+				<div class="overlay">
+					<p class="img_desc01"> 평점 </p>
 				</div>
 			</li>
+		</ul>
+	</div>
+	<div class="sec">
+	    <ul>
 			<li>
 				<div id="main02">
 					<img src="./img/main02.jpg" width="200px">
 				</div>
 				<div id="ta02"><h3>파이브 피트</h3></div><br>
-				<div id="button02">
-					<button type="button"> click </button></a>
-				</div>
+				
 			</li>
+		</ul>
+	</div>
+	<div class="sec">
+	    <ul>
 			<li>
 				<div id="main03">
 					<img src="./img/main03.jpg" width="200px">
 				</div>
 				<div id="ta03"><h3>어바웃 타임</h3> </div><br>
-				<div id="button03">
-					<button type="button"> click </button>
-				</div>
+				
 			</li>
+		</ol>
+	</div>
+	<div class="sec">
+		<ul>
 			<li>
 				<div id="main04">
 					<img src="./img/main04.jpg" width="200px">
 				</div>
 				<div id="ta04"><h3>그 시절 우리가 좋아했던 소녀</h3></div><br>
-				<div>
-					<button>click</button>
-				</div>
+				
 			</li>
+		</ul>
+	</div>
+	<div class="sec">
+		<ul>
 			<li>
 				<div id="main05">
 					<img src="./img/main05.jpg" width="200px">
 				</div>
 				<div id="ta05"><h3>비포 선라이즈</h3> </div><br>
-				<div id="button05">
-					<button type="button"> click </button>
-				</div>
 			</li>
-		</ol>
-</nav>
+		</ul>
+	</div>
 </body>
 </html>
